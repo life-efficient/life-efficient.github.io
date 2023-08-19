@@ -1,14 +1,21 @@
 <html>
+
 <head>
-    <title>Funnel Hub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handjet&family=Kanit:wght@600&family=Montserrat:wght@100&family=Poppins:wght@700&display=swap');
+    </style>
+    <title>BERG LABS</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <style>
         body {
+            padding-top: 20%;
             background-color: #f5f5f5;
             justify-content: center;
             align-items: center;
             display: flex;
+            flex-direction: column;
         }
+
         #grad-bg {
             position: absolute;
             top: 0;
@@ -18,21 +25,96 @@
             z-index: -1;
             /* background-color: #f5f5f5; */
         }
-    </style>    
+        #title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* transform: scale(2); */
+        }
+        #berg {
+            font-size: 128px;
+            font-weight: 700;
+            font-family: 'Kanit', sans-serif;
+            margin-bottom: 0;
+            height: 140px;
+        }
+        #labs {
+            font-size: 64px;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            transform: scaleX(1.96);
+        }
+        
+        #subheading {
+            font-family: 'Kanit', sans-serif;
+            font-weight: 200;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* apply to items class */
+        #items {
+            font-family: 'Handjet', sans-serif;
+            font-weight: 200;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .item {
+            margin: 10px;
+            padding: 10px;
+            /* border-radius: 10px; */
+            /* background-color: #fff; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 290px;
+            text-align: center;
+            /*  remove all link formatting */
+            cursor: pointer;
+        }
+
+        .item {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
     <!-- stripe-gradient.js -->
     <script src="script.js"></script>
     <script src="stripe-gradient.js"></script>
     <!-- <script src="https://github.com/life-efficient/js-dists/blob/main/stripe-gradient-animation/dist/stripe-gradient.js"></script> -->
 </head>
+
 <body>
-    <script async data-uid="a81ed26f93" src="https://build-the-future.ck.page/a81ed26f93/index.js"></script>
-    <canvas id="grad-bg"></canvas>
-    <script>
-        new Gradient({canvas: '#grad-bg', colors: [
-            '#C0C0BE', '#FFFFFF', '#535353', '#566463']
-            });
-
-    </script>
-
+    <!-- <script async data-uid="a81ed26f93" src="https://build-the-future.ck.page/a81ed26f93/index.js"></script> -->
+    <script src="apply_theme.js"></script>
+    <div id="title">
+        <div id="berg">
+            BERG
+        </div>
+        <div id="labs">
+            LABS
+        </div>
+    </div>
+    <!-- <div id="subheading">
+        We inform, advise, and execute on AI strategy.
+    </div> -->
+    <div id="items">
+        <a class="item" href="advise.html">
+            AI STRATEGY AND DEVELOPMENT CONSULTING
+        </a>
+        <!-- <div class="item">
+            PORTFOLIO COMPANIES
+        </div> -->
+        <a class="item" href="https://www.youtube.com/channel/UCRaa8GEm9afusf5PmuDqNuQ">
+            "SURVIVE THE AI" PODCAST
+        </a>
+        <a class="item" href="newsletter.html">
+            "BUILD THE FUTURE" NEWSLETTER
+        </a>
+    </div>
 </body>
+
 </html>
