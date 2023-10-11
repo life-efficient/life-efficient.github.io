@@ -15,3 +15,7 @@ new Gradient({
         // '#a960ee', '#ff333d', '#90e0ff', '#ffcb57'
     ]
 });
+
+// set title to BERG LABS
+var title = document.getElementsByTagName('title')[0];
+title.innerHTML = 'BERG LABS'
